@@ -63,6 +63,7 @@ Build structure in this order:
 ### Step 5: Draft Generation
 
 Produce:
+
 - Full long-form advertorial draft
 - 3 CTA block variants
 - 3 lead paragraph variants
@@ -98,3 +99,4 @@ For each run, return:
 - Do not use hype language without evidence.
 - Keep voice specific, concrete, and emotionally grounded.
 - If evidence is weak, flag it clearly before finalizing draft.
+

@@ -1,0 +1,12 @@
+# Local environment variables / secrets
+.env
+.env.local
+.env.secret
+.env.*.local
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# Local SQLite databases (contain lead/customer PII)
+*.db

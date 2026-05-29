@@ -6,7 +6,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 from twilio.twiml.voice_response import VoiceResponse
 
 from ai_handler import classify_incoming_intent
-from config import TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_PHONE_NUMBER
+from config import TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_PHONE_NUMBER, OWNER_CELL_PHONE
 from database import (
     initialize_database,
     log_lead,
@@ -53,9 +53,93 @@ def send_text_message(to_phone_number: str, body_text: str) -> None:
         raise RuntimeError(f"Twilio send failed: {error}") from error
 
 
+def send_initial_text_back_payload(caller_number: str) -> None:
+    """
+    Reusable missed-call text-back workflow.
+    This writes state/log records and sends the first SMS follow-up.
+    """
+    if not caller_number:
+        raise RuntimeError("Caller number is required for missed-call text-back.")
+
+    check_existing_customer(caller_number)
+    log_lead(
+        phone_number=caller_number,
+        raw_text="voice_trigger status=forwarded_missed_call",
+        lead_status="MISSED_CALL_TEXT_BACK",
+        intent_name="VOICE_MISSED_CALL",
+        handling_note="automatic_text_back_sent",
+    )
+    update_customer_state(caller_number, "TEXT_BACK_SENT")
+
+    text_back_message = (
+        "Hey, sorry we just missed your call. "
+        "What can we help you with today?"
+    )
+    send_text_message(caller_number, text_back_message)
+    dispatch_owner_notification(
+        caller_number=caller_number,
+        classified_state="MISSED_CALL_TEXT_BACK",
+        raw_text="Missed call captured and auto text-back sent.",
+    )
+
+
+def dispatch_owner_notification(caller_number: str, classified_state: str, raw_text: str) -> None:
+    """
+    Notify the business owner when a critical lead is captured.
+    This helper is intentionally non-blocking and never fails the webhook.
+    """
+    if not OWNER_CELL_PHONE:
+        logger.info("OWNER_CELL_PHONE not configured; skipping owner notification.")
+        return
+
+    if not TWILIO_PHONE_NUMBER:
+        logger.warning("TWILIO_PHONE_NUMBER missing; cannot dispatch owner notification.")
+        return
+
+    alert_payload = (
+        "Engine Alert: High-Priority Lead Captured\n\n"
+        f"Number: {caller_number}\n"
+        f"Type: {classified_state}\n"
+        f"Message: \"{raw_text}\"\n\n"
+        "Check your Operations Command Center to follow up."
+    )
+
+    try:
+        twilio_client = get_twilio_client()
+        twilio_client.messages.create(
+            body=alert_payload,
+            from_=TWILIO_PHONE_NUMBER,
+            to=OWNER_CELL_PHONE,
+        )
+    except Exception as error:
+        logger.exception("Failed to dispatch owner notification SMS: %s", error)
+
+
 @app.route("/health", methods=["GET"])
 def health_check():
     return jsonify({"status": "ok"}), 200
+
+
+@app.route("/webhook/voice", methods=["POST"])
+def handle_missed_call_trigger():
+    """
+    Intercept forwarded missed calls and transition them into SMS automation.
+    """
+    caller_number = request.values.get("From", "").strip()
+
+    voice_response = VoiceResponse()
+    voice_response.reject(reason="busy")
+
+    if not caller_number:
+        logger.warning("Voice webhook called without a valid From number.")
+        return str(voice_response), 200, {"Content-Type": "application/xml"}
+
+    try:
+        send_initial_text_back_payload(caller_number)
+    except RuntimeError as error:
+        logger.exception("Failed missed-call text-back workflow: %s", error)
+
+    return str(voice_response), 200, {"Content-Type": "application/xml"}
 
 
 @app.route("/webhook/twilio", methods=["POST"])
@@ -93,24 +177,7 @@ def handle_voice_trigger(form_data, from_phone_number: str):
     Handle missed-call events.
     This logs a lead, sends a text-back, and returns a short TwiML voice response.
     """
-    call_status = form_data.get("CallStatus", "unknown")
-    lead_note = f"voice_trigger status={call_status}"
-
-    check_existing_customer(from_phone_number)
-    log_lead(
-        phone_number=from_phone_number,
-        raw_text=lead_note,
-        lead_status="MISSED_CALL_TEXT_BACK",
-        intent_name="VOICE_MISSED_CALL",
-        handling_note="automatic_text_back_sent",
-    )
-    update_customer_state(from_phone_number, "TEXT_BACK_SENT")
-
-    text_back_message = (
-        "Thanks for calling! We missed your call but can help by text right away. "
-        "Tell us what you need and we will assist shortly."
-    )
-    send_text_message(from_phone_number, text_back_message)
+    send_initial_text_back_payload(from_phone_number)
 
     voice_response = VoiceResponse()
     voice_response.say(
@@ -123,6 +190,7 @@ def handle_voice_trigger(form_data, from_phone_number: str):
     return str(voice_response), 200, {"Content-Type": "application/xml"}
 
 
+@app.route("/", methods=["POST"])
 @app.route("/webhook/sms", methods=["POST"])
 def process_sms_pipeline():
     """Dedicated SMS endpoint using strict interface-vs-operator flow."""
@@ -163,6 +231,13 @@ def process_sms_pipeline_internal(form_data, from_phone_number: str):
     )
     update_customer_state(from_phone_number, next_state)
     log_transaction(from_phone_number, customer_message, current_state=next_state)
+
+    if next_state in {"PRIORITY_BOOKING", "HUMAN_INTERVENTION_REQUIRED"}:
+        dispatch_owner_notification(
+            caller_number=from_phone_number,
+            classified_state=next_state,
+            raw_text=customer_message,
+        )
 
     reply_message, lead_status, handling_note = build_deterministic_response(
         detected_intent=detected_intent,

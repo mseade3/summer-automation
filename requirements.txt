@@ -3,4 +3,9 @@ twilio
 openai
 python-dotenv
 requests
-
+pandas
+streamlit
+streamlit-autorefresh
+sqlalchemy
+psycopg2-binary
+gunicorn
