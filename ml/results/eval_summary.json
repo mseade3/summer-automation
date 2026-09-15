@@ -1,5 +1,5 @@
 {
-  "dataset": "/Users/milesseade/summer-automation-engine/ml/data/sms_intent_dataset.jsonl",
+  "dataset": "ml/data/sms_intent_dataset.jsonl",
   "dataset_n": 165,
   "dataset_source": "synthetic",
   "seed": 42,
