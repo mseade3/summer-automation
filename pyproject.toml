@@ -1,0 +1,26 @@
+[project]
+name = "summer-automation-engine"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "flask",
+    "twilio",
+    "openai",
+    "python-dotenv",
+    "requests",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "gunicorn",
+]
+
+[project.optional-dependencies]
+dashboard = [
+    "pandas",
+    "streamlit",
+    "streamlit-autorefresh",
+]
+ml = [
+    "scikit-learn>=1.4",
+    "pandas>=2.0",
+    "numpy>=1.26",
+]

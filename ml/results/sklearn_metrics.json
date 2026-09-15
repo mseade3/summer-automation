@@ -1,0 +1,42 @@
+{
+  "n": 50,
+  "accuracy": 0.84,
+  "macro_f1": 0.8323772393947833,
+  "weighted_f1": 0.8307390698969647,
+  "labels": [
+    "BOOKING",
+    "LEAD_INQUIRY",
+    "UNKNOWN"
+  ],
+  "confusion_matrix": [
+    [
+      16,
+      0,
+      0
+    ],
+    [
+      1,
+      16,
+      0
+    ],
+    [
+      2,
+      5,
+      10
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n     BOOKING      0.842     1.000     0.914        16\nLEAD_INQUIRY      0.762     0.941     0.842        17\n     UNKNOWN      1.000     0.588     0.741        17\n\n    accuracy                          0.840        50\n   macro avg      0.868     0.843     0.832        50\nweighted avg      0.869     0.840     0.831        50\n",
+  "model": "tfidf_logistic",
+  "train_n": 115,
+  "test_n": 50,
+  "train_label_counts": {
+    "LEAD_INQUIRY": 38,
+    "BOOKING": 39,
+    "UNKNOWN": 38
+  },
+  "test_label_counts": {
+    "UNKNOWN": 17,
+    "BOOKING": 16,
+    "LEAD_INQUIRY": 17
+  }
+}

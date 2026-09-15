@@ -1,0 +1,52 @@
+{
+  "dataset": "/Users/milesseade/summer-automation-engine/ml/data/sms_intent_dataset.jsonl",
+  "dataset_n": 165,
+  "dataset_source": "synthetic",
+  "seed": 42,
+  "test_size": 0.3,
+  "sklearn": {
+    "accuracy": 0.84,
+    "macro_f1": 0.8323772393947833,
+    "weighted_f1": 0.8307390698969647,
+    "confusion_matrix": [
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        1,
+        16,
+        0
+      ],
+      [
+        2,
+        5,
+        10
+      ]
+    ]
+  },
+  "llm": {
+    "accuracy": 0.84,
+    "macro_f1": 0.8396514161220043,
+    "weighted_f1": 0.8376209150326798,
+    "confusion_matrix": [
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        5
+      ],
+      [
+        2,
+        1,
+        14
+      ]
+    ],
+    "errors": 0
+  }
+}

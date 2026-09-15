@@ -7,6 +7,15 @@
 # Python bytecode cache
 __pycache__/
 *.pyc
+.Python
+*.egg-info/
+.venv/
+venv/
 
 # Local SQLite databases (contain lead/customer PII)
 *.db
+
+# Local tooling / deploy caches (never commit secrets or private worker state)
+.vercel
+.cursor/
+_uv/

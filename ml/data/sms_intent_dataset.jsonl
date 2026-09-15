@@ -1,0 +1,165 @@
+{"id": "bk_001", "text": "Can I book an oil change for tomorrow morning?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_002", "text": "I'd like to schedule a tire rotation this Friday at 2pm", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_003", "text": "Need to make an appointment for brake inspection next week", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_004", "text": "Book me for a full service on Saturday please", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_005", "text": "Do you have any openings tomorrow? I need to get my car in.", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_006", "text": "I want to reserve a slot for alignment on Monday", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_007", "text": "Can we set up an appointment for my SUV this afternoon?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_008", "text": "Please schedule me for diagnostic testing on Wed at 10", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_009", "text": "Looking to book a transmission flush ASAP", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_010", "text": "I'd like an appointment for new brake pads Thursday", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_011", "text": "Can you put me down for 3pm tomorrow for an oil change?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_012", "text": "Need to schedule a battery replacement this week", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_013", "text": "Book an appointment for my Honda Civic — check engine light", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_014", "text": "I need a slot Friday morning for AC recharge", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_015", "text": "Please make me an appointment for tire replacement", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_016", "text": "Can I come in tomorrow at noon for a state inspection?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_017", "text": "Schedule me for a tune-up next Tuesday", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_018", "text": "I want to book a wheel balance for Saturday", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_019", "text": "Need an appointment today if possible for brakes", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_020", "text": "Put me on the calendar for oil + filter change Mon 9am", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_021", "text": "I'd like to reserve time for a pre-purchase inspection", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_022", "text": "Can we book a detail + oil change combo this weekend?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_023", "text": "Appointment please: radiator flush on Thursday", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_024", "text": "I need to schedule my annual maintenance visit", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_025", "text": "Book me in for spark plugs and coils Friday", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_026", "text": "Looking for a Saturday appointment for tire swap to winters", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_027", "text": "Can I get scheduled for a clutch check next week?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_028", "text": "Please set an appointment for my truck's oil change", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_029", "text": "I want to come in Wed afternoon for a diagnostic", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_030", "text": "Need to book exhaust repair — when can I bring it in?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_031", "text": "Schedule a visit for power steering leak diagnosis", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_032", "text": "Can you book me for 8am tomorrow for tires?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_033", "text": "I'd like an appointment ASAP for overheating issues", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_034", "text": "Put me down for Fri 4pm oil change please", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_035", "text": "Need to make a reservation for brake fluid flush", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_036", "text": "Book Saturday morning for battery test and replace", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_037", "text": "Can I schedule a cabin filter + air filter swap?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_038", "text": "I need an appointment for my daughter's car Tuesday", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_039", "text": "Please book a slot for suspension check this week", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_040", "text": "Looking to schedule timing belt service next month", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_041", "text": "Can we lock in 11am tomorrow for an oil change?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_042", "text": "I want to set up a recurring oil change appointment", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_043", "text": "Book me for tire rotation and balance Fri morning", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_044", "text": "Need a same-day appointment if you have room", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_045", "text": "Schedule me in for wiper and light bulb replacement", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_046", "text": "Gotta get my brakes done — any openings Thu?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_047", "text": "Please pencil me in for an oil change after work tomorrow", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_048", "text": "I need to book the bay for a strut replacement", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_049", "text": "Appointment request: Fri 1:30 for tire puncture repair", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_050", "text": "Can we schedule diagnostics for the grinding noise?", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_051", "text": "I'd like to book a winterization package", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_052", "text": "Need to set a time to drop off for clutch work", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_053", "text": "Book an express lube if you still offer that", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_054", "text": "Looking to schedule coolant flush Mon AM", "label": "BOOKING", "source": "synthetic"}
+{"id": "bk_055", "text": "Can I reserve Saturday for a full inspection before a road trip?", "label": "BOOKING", "source": "synthetic"}
+{"id": "ld_001", "text": "How much does an oil change usually cost?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_002", "text": "Do you guys work on European cars?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_003", "text": "What are your hours this week?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_004", "text": "Can you tell me more about your services?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_005", "text": "Do you offer financing for bigger repairs?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_006", "text": "Where are you located?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_007", "text": "Are you open on Sundays?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_008", "text": "What's the price range for brake pad replacement?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_009", "text": "Do you have a warranty on labor?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_010", "text": "Curious if you handle diesel trucks", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_011", "text": "How long does a typical alignment take?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_012", "text": "Do you provide loaner cars?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_013", "text": "What's included in your full service package?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_014", "text": "Are your techs ASE certified?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_015", "text": "Do you accept walk-ins or appointment only?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_016", "text": "Can I get a rough estimate for new tires?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_017", "text": "Do you sell and install batteries?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_018", "text": "What's your address and parking situation?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_019", "text": "Do you work on hybrids / EVs?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_020", "text": "How far out are you booking usually?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_021", "text": "Is there a senior or military discount?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_022", "text": "Do you offer free multi-point inspections?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_023", "text": "What's the turnaround for a state inspection?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_024", "text": "Can you email me a services list?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_025", "text": "Do you handle fleet maintenance accounts?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_026", "text": "What's your shop rate per hour?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_027", "text": "Do you use OEM or aftermarket parts?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_028", "text": "Are you the place near Main Street?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_029", "text": "Do you tow vehicles to your shop?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_030", "text": "What's the difference between synthetic and conventional oil service here?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_031", "text": "Do you have a waiting area with WiFi?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_032", "text": "Can I drop keys in a night box?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_033", "text": "Do you price-match other shops?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_034", "text": "How do I get a written quote?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_035", "text": "What payment methods do you take?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_036", "text": "Do you service RVs or just passenger cars?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_037", "text": "Is there a membership / maintenance plan?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_038", "text": "What's your phone number if I need to call later?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_039", "text": "Do you do emissions testing too?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_040", "text": "Curious about your tire brands and prices", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_041", "text": "How long have you been in business?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_042", "text": "Do you offer mobile mechanic visits?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_043", "text": "What's the wait for a diagnostic appointment typically?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_044", "text": "Can someone explain your brake special that's advertised?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_045", "text": "Do you work with insurance claims for collision?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_046", "text": "Ballpark cost for replacing two front tires?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_047", "text": "Do you recommend synthetic oil for a 2018 Camry?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_048", "text": "How busy is Saturday usually?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_049", "text": "Do you inspect used cars before purchase?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_050", "text": "Is there a fee just to look at the check engine light?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_051", "text": "What's your policy if a repair takes longer than quoted?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_052", "text": "Do you recycle old oil / batteries?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_053", "text": "Can customers watch the work being done?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_054", "text": "Do you have reviews I can read online?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "ld_055", "text": "Is your shop accessible by bus / near downtown?", "label": "LEAD_INQUIRY", "source": "synthetic"}
+{"id": "un_001", "text": "Thanks!", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_002", "text": "ok", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_003", "text": "Wrong number sorry", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_004", "text": "STOP", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_005", "text": "Can you call me back?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_006", "text": "This is Mike from across the street", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_007", "text": "lol what", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_008", "text": "My package never showed up", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_009", "text": "Unsubscribe please", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_010", "text": "Who is this?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_011", "text": "Happy birthday!", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_012", "text": "Did you get the photos I sent?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_013", "text": "I'm at the wrong address I think", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_014", "text": "The WiFi password isn't working", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_015", "text": "Please cancel my pizza order", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_016", "text": "Is this the dentist office?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_017", "text": "Random thought: coffee later?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_018", "text": "Uhhhh", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_019", "text": "???", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_020", "text": "Ignore previous message", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_021", "text": "Testing 123", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_022", "text": "My fridge stopped working help", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_023", "text": "Where did I leave my keys", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_024", "text": "Can you babysit Friday?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_025", "text": "This text is for John not the shop", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_026", "text": "Spam filter test message", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_027", "text": "asdfasdf", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_028", "text": "I'll think about it", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_029", "text": "Maybe later", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_030", "text": "nm", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_031", "text": "Never mind", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_032", "text": "Call the other guy", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_033", "text": "Send me the spreadsheet", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_034", "text": "Did payroll go through?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_035", "text": "Your website is down I think — different company?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_036", "text": "I need a plumber not a mechanic", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_037", "text": "Looking for a haircut appointment", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_038", "text": "Is the concert still on tonight?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_039", "text": "Pass me the salt", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_040", "text": "Good morning sunshine", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_041", "text": "FYI the meeting moved to 4", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_042", "text": "Can you pick up milk?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_043", "text": "That meme was hilarious", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_044", "text": "See you at the gym", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_045", "text": "What's the weather tomorrow?", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_046", "text": "blue", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_047", "text": "k", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_048", "text": "👍", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_049", "text": "sent from my iphone", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_050", "text": "forwarded message", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_051", "text": "out of office until monday", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_052", "text": "please disregard", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_053", "text": "this isn't for you", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_054", "text": "wrong chat", "label": "UNKNOWN", "source": "synthetic"}
+{"id": "un_055", "text": "bot?", "label": "UNKNOWN", "source": "synthetic"}

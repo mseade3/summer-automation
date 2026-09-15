@@ -1,0 +1,32 @@
+{
+  "n": 50,
+  "accuracy": 0.84,
+  "macro_f1": 0.8396514161220043,
+  "weighted_f1": 0.8376209150326798,
+  "labels": [
+    "BOOKING",
+    "LEAD_INQUIRY",
+    "UNKNOWN"
+  ],
+  "confusion_matrix": [
+    [
+      16,
+      0,
+      0
+    ],
+    [
+      0,
+      12,
+      5
+    ],
+    [
+      2,
+      1,
+      14
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n     BOOKING      0.889     1.000     0.941        16\nLEAD_INQUIRY      0.923     0.706     0.800        17\n     UNKNOWN      0.737     0.824     0.778        17\n\n    accuracy                          0.840        50\n   macro avg      0.850     0.843     0.840        50\nweighted avg      0.849     0.840     0.838        50\n",
+  "model": "openai_llm_router",
+  "errors": 0,
+  "test_n": 50
+}
